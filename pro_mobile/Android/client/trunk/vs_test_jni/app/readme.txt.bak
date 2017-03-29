@@ -1,0 +1,20 @@
+
+-----NDK 编译步骤|START|------------------------------
+1. Android Studio DEBUG模式编译生成的.class 文件在
+ D:\workspace\sync_github\repository\trunk\pro\Sy_Android_Test_Jni\trunk\Alpha-0.00.001\app\build\intermediates\classes\debug
+ \sy\android\test\jni\HelloJni.class
+ 目录下。
+2. 编译生成 .h 头文件。
+进入 classes 文件夹下执行： javah sy.android.test.jni.HelloJni 生成 sy_android_test_jni_HelloJni.h文件
+2.1 复制 sy_android_test_jni_HelloJni.h 到 Android项目的jni目录下;
+2.2 新建 sy_android_test_jni_HelloJni.c C源文件，编写JNI层实现。
+3.使用CMD下的ndk-build 编译
+3.1 打开CMD
+3.2 进入 目录 D:\workspace\sync_github\repository\trunk\pro\Sy_Android_Test_Jni\trunk\Alpha-0.00.001\app\src\main\jni
+3.3 > ndk-build
+
+
+---NDK修改编译后.so文件的默认位置-------------------
+1. 修改 D:\SoftSetup\code\android\AndroidNDK\android-ndk64-r10-windows-x86_64\android-ndk-r10\build\core\
+第187 行。    NDK_APP_LIBS_OUT := $(NDK_PROJECT_PATH)/libs 改为   NDK_APP_LIBS_OUT := $(NDK_PROJECT_PATH)/libss 即可 
+

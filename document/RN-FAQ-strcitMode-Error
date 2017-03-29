@@ -1,0 +1,19 @@
+/node_modules/React-native/Libraries/Utilities/UIManager.js  
+because babel now adds 'use strict' automatically so it checks function declarations in a lexically nested statement
+修改成如下代码：
+
+/**
+ * Copies the ViewManager constants and commands into UIManager. This is
+ * only needed for iOS, which puts the constants in the ViewManager
+ * namespace instead of UIManager, unlike Android.
+ */
+if (Platform.OS === 'ios') {
+  // Copied from NativeModules
+    var normalizePrefix = function(moduleName){
+        return moduleName.replace(/^(RCT|RK)/, '');
+    }
+  // function normalizePrefix(moduleName) {
+  //
+  // }
+}
+
