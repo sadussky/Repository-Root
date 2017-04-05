@@ -1,0 +1,6 @@
+##Local Installation |START|---------------------
+npm install webpack --save-dev
+npm install webpack@<version> --save-dev
+
+
+
