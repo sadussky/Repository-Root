@@ -10,5 +10,20 @@ On branch master
 Your branch is ahead of 'origin/master' by 2 commits.
   (use "git push" to publish your local commits)
 nothing to commit, working directory clean
------------------------------/
+-----------------------------**/
+
+##|START|=================================================================
+git diff ##
+git diff --cached 
+git diff --staged 
+
+##|START|=================================================================
+Removing Files
+$ rm grit.gemspec
+$ git status
+
+Then, if you run git rm, it stages the file’s removal:
+$ git rm grit.gemspec
+
+
 
