@@ -25,5 +25,98 @@ $ git status
 Then, if you run git rm, it stages the file’s removal:
 $ git rm grit.gemspec
 
+##|START|=================================================================
+git log 
+git log -p 
+git log -stat 
+git log --pretty=oneline 
+git log --pretty=oneline --graph
+
+##|START|=================================================================
+$ git clone https://github.com/schacon/ticgit
+Cloning into 'ticgit'...
+remote: Reusing existing pack: 1857, done.
+remote: Total 1857 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (1857/1857), 374.35 KiB | 268.00 KiB/s, done.
+Resolving deltas: 100% (772/772), done.
+Checking connectivity... done.
+$ cd ticgit
+$ git remote -v 
+origin  https://github.com/sadussky/Repository-Webpack2.git (fetch)
+origin  https://github.com/sadussky/Repository-Webpack2.git (push)
+
+git remote add
+[shortname] [url]:
+
+$ git remote
+origin
+$ git remote add pb https://github.com/paulboone/ticgit
+$ git remote -v
+origin https://github.com/schacon/ticgit (fetch)
+origin https://github.com/schacon/ticgit (push)
+pb https://github.com/paulboone/ticgit (fetch)
+pb https://github.com/paulboone/ticgit (push)
+
+
+##|START|=================================================================
+Pushing to Your Remotes
+When you have your project at a point that you want to share, you have to push it upstream. The command for this
+is simple: git push [remote-name] [branch-name]. If you want to push your master branch to your origin server
+(again, cloning generally sets up both of those names for you automatically), then you can run this to push any
+commits you’ve done back up to the server:
+
+$ git push origin master
+
+This command works only if you cloned from a server to which you have write access and if nobody has pushed
+in the meantime. If you and someone else clone at the same time and they push upstream and then you push
+upstream, your push will rightly be rejected. You’ll have to pull down their work first and incorporate it into yours
+before you’ll be allowed to push. See Chapter 3 for more detailed information on how to push to remote servers.
+
+$ git remote show origin
+/**-----------------------------
+* remote origin
+URL: https://github.com/my-org/complex-project
+Fetch URL: https://github.com/my-org/complex-project
+Push URL: https://github.com/my-org/complex-project
+HEAD branch: master
+Remote branches:
+master tracked
+dev-branch tracked
+markdown-strip tracked
+issue-43 new (next fetch will store in remotes/origin)
+issue-45 new (next fetch will store in remotes/origin)
+refs/remotes/origin/issue-11 stale (use 'git remote prune' to remove)
+ 
+Local branches configured for 'git pull':
+dev-branch merges with remote dev-branch
+master merges with remote master
+Local refs configured for 'git push':
+dev-branch pushes to dev-branch (up to date)
+markdown-strip pushes to markdown-strip (up to date)
+master pushes to master (up to date)
+-----------------------------**/
+
+This command shows which branch is automatically pushed to when you run git push while on certain branches.
+It also shows you which remote branches on the server you don’t yet have, which remote branches you have that have
+been removed from the server, and multiple branches that are automatically merged when you run git pull.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
