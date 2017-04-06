@@ -1,0 +1,12 @@
+
+
+git clone 
+git add -> git commit -> git push 
+git status |START|---------------
+/**-----------------------------
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+-----------------------------/
+
