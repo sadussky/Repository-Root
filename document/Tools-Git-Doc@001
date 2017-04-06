@@ -2,6 +2,8 @@
 
 git clone 
 git add -> git commit -> git push 
+git commit -m 'some commit text'
+git commit -F ./COMMIT-MSG  ## 提交时从文件中获取注释 
 git status |START|---------------
 /**-----------------------------
 On branch master
