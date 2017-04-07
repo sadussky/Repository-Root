@@ -101,22 +101,7 @@ It also shows you which remote branches on the server you don’t yet have, whic
 been removed from the server, and multiple branches that are automatically merged when you run git pull.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##注意：在push代码之前，先执行 
+$ git fetch origin  master  ##获取远程仓库最新的代码，然后跟本地 staged的代码比较合并，之后重新commit 并 push 
 
 
