@@ -8,3 +8,8 @@ https://developer.mozilla.org/en/docs/Web/API/Fetch_API  ##Fetch_API
 https://developer.mozilla. /en-US/docs/Web/API/Fetch_API/Using_Fetch ##Using Fetch
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS  ##HTTP access control (CORS)
 
+##学习 You've seen middleware in action in the Async Actions example. 
+##If you've used server-side libraries like Express and Koa,
+http://expressjs.com/   
+                     
+
