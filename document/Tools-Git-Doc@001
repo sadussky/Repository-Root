@@ -105,3 +105,41 @@ been removed from the server, and multiple branches that are automatically merge
 $ git fetch origin  master  ##获取远程仓库最新的代码，然后跟本地 staged的代码比较合并，之后重新commit 并 push 
 
 
+# 取回远程仓库的变化，并与本地分支合并
+$ git pull [remote] [branch]
+
+git init 将一个目录初始化为 Git 仓库
+git clone <git地址> 克隆到本地
+
+git pull <远端别名><远端branch> 抓取并合并
+
+git remote add <别名> <git地址> 设置远端别名
+
+git remote <-v> 列出远端，-v为详细信息
+
+git remote show <远端别名> 查看远端信息
+
+git remote rm <远端别名> 删除远端
+
+git remote update <远端别名> 更新分支列表 
+
+git push <远端别名> <本地分支>
+
+git add .  添加当前目录的所有文件到暂存区
+# 添加指定文件到暂存区
+$ git add [file1] [file2] ...
+
+# 提交暂存区到仓库区
+git commit -m "First commit"是提交这里要在-m参数后面加上提交参数，很重要哟，不然会被认
+
+为不合法不能提交.
+
+# 列出所有本地分支
+$ git branch
+
+# 列出所有远程分支
+$ git branch -r
+
+# 列出所有本地分支和远程分支
+$ git branch -a
+
