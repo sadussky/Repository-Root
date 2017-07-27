@@ -1,3 +1,0 @@
-Linux-Ubuntu-14.04.1-FAQ-
-
-1. Tomcat端口1024以下的使用需要root权限，否则无法正常访问。 

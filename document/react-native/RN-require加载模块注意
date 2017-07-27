@@ -1,0 +1,9 @@
+
+
+RN-require加载模块注意:
+
+在项目目录的其他文件夹下如果存在js和package.json 文件，那么这个模块也可以被
+import Picker from 'react-native-picker-v4.0.18'; 方法加载到。
+import XXX from 'XXX';  不一定是从 node-modules 文件夹中加载的，请注意。
+
+

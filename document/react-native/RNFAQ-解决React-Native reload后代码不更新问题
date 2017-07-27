@@ -1,0 +1,13 @@
+
+
+解决React-Native reload后代码不更新问题
+
+使用React-Native开发app也会火起来。我们在真机上面调试是需要实时更新代码，让代码生效的。一般来说我们会设置Enable Hot Reloading【轻轻摇晃手机就可以设置】。但是有时候我们修改了代码，在手机上并不会实时更新代码。
+解决的办法就是打开文件 
+app_name\node_modules\react-native\node_modules\node-haste\lib\FileWatcher\index.js 
+修改变量MAX_WAIT_TIME：
+
+```shell
+// var MAX_WAIT_TIME = 120000;
+var MAX_WAIT_TIME = 360000;
+```

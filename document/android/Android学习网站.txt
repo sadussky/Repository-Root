@@ -1,0 +1,27 @@
+
+
+https://opensource.google.com/projects/list/featured?page=2  ##所有google开源的项目汇总
+https://opensource.google.com/projects/material-components-android   ##md思想的组件开源
+
+
+https://developer.mozilla.org/en/docs/Web/API/Fetch_API  ##Fetch_API
+https://developer.mozilla. /en-US/docs/Web/API/Fetch_API/Using_Fetch ##Using Fetch
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS  ##HTTP access control (CORS)
+
+##学习 You've seen middleware in action in the Async Actions example. 
+##If you've used server-side libraries like Express and Koa,
+http://expressjs.com/   
+##Books and blogs
+Books
+Here are a few of the many books on Express: 
+>> Express.js in Action, Manning Publications, April 2016.
+>> Getting MEAN with Mongo, Express, Angular, and Node, Manning Publications, early 2015.
+>> Pro Express.js: Master Express.js: The Node.js Framework For Your Web Development, Apress, December 2014.
+>> Mastering Web Application Development with Express, Packt Publishing, September 2014.
+>> Web Development with Node and Express, O’Reilly Media, July 2014.
+>> Node.js in Action, Manning Publications, October 2013.
+>> Express Web Application Development, Packt Publishing, June 2013.
+>> express - Middleware für node.js, texxtoor, September 2015. In deutscher Sprache / in German language
+>> JADE - die Template Engine für node.js, texxtoor, September 2015. In deutscher Sprache / in German language
+>> Node Web Development, 2nd edition, Packt Publishing, August 2013
+
